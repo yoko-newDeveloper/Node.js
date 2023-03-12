@@ -1,0 +1,13 @@
+ devimport Vuex from 'vuex'
+
+const createStore = () => { // アロー関数を使ってcreateStoreを定義
+    return new Vuex.Store({
+        state: function() {
+            return  {
+                message: 'Hello Vuex!'
+            }
+        }
+    })
+}
+
+export default createStore
